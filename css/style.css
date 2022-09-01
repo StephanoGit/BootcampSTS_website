@@ -233,3 +233,21 @@ body {
     
     border-radius: 50%;
 }
+
+.links-sts,
+.links-me{
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+}
+
+.links-box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.links-box img{
+    width: 100px;
+}
