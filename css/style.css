@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'CodeSquared';
+    src:url('../fonts/code-squared-font/CodeSquaredRegular-AYRg.woff2') format('woff2'),
+    url('../fonts/code-squared-font/CodeSquaredRegular-AYRg.woff') format('woff'),
+    url('../fonts/code-squared-font/CodeSquaredRegular-AYRg.ttf') format('truetype');
+}
+
+.logo-text .text{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #1F51FF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #1F51FF; }
+  }
+
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4.2rem;
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    font-size: 14px;  
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(25, 25, 25);
+    font-family: CodeSquared;
+    color: rgb(226, 226, 226);
+    font-size: 14px;
+
+    outline: 3px solid #1F51FF ;
+    outline-offset: -20px;
+}
+
+.outline-box{
+    margin: auto;
+    padding: 60px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 180px
+}
+
+.days-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.days-col1,
+.days-col2,
+.days-col3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.day-bttn{
+    padding: 1em;
+    border: 2px solid rgb(25, 25, 25);
+    line-height: 1.5em;
+}
+
+.day-bttn:hover{
+    border: 2px solid #1F51FF;
+}
+
+.logo-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 50vh;
+    font-size: 4.2em;
+}
+
+.logo-text p em{
+    font-style: normal;
+    color:#a5a5a5;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.logo-img{
+    box-shadow:
+    0 0 0 5px #1F51FF,
+    0 0 0 10px rgb(25, 25, 25),
+    0 0 0 15px #1f50ffad,
+    0 0 0 20px rgb(25, 25, 25),
+    0 0 0 25px #1f50ff5b;
+    animation: pulse 5s infinite;
+    
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px #1f50ff5b;
+  }
+  25% {
+      -webkit-box-shadow: 0 0 0 15px #1f50ffad;
+  }
+  50% {
+      -webkit-box-shadow: 0 0 0 15px rgb(25, 25, 25);
+  }
+
+  75% {
+    -webkit-box-shadow: 0 0 0 15px #1f50ffad;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 0 0px #1f50ff5b;
+        }
+}
+@keyframes pulse {
+  0% {
+      -moz-box-shadow: 0 0 0 0px #1f50ff5b;
+      box-shadow: 0 0 0 0px #1f50ff5b;
+  }
+  25% {
+      -moz-box-shadow: 0 0 0 0px #1f50ffad;
+      box-shadow: 0 0 0 0px #1f50ffad;
+  }
+  50% {
+      -moz-box-shadow: 0 0 0 15px rgb(25, 25, 25);
+      box-shadow: 0 0 0 15px rgb(25, 25, 25);
+  }
+
+  75% {
+    -moz-box-shadow: 0 0 0px #1f50ffad;
+    box-shadow: 0 0 0 0px #1f50ffad;
+}
+100% {
+    -moz-box-shadow: 0 0 0 0px #1f50ff5b;
+    box-shadow: 0 0 0 0px #1f50ff5b;
+}
+}
+
+
+.logo-img img{
+    width: 105%;
+}
+
+.section-about{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-about-info{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section-about-info .text{
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 35vw;
+    line-height: 1.4rem;
+}
+
+.section-about-info .text em{
+    color: #1F51FF;
+    font-style: normal;
+}
+
+.section-about-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-about img{
+    width: 20%;
+
+    box-shadow:
+    0 0 0 5px #1F51FF,
+    0 0 0 10px rgb(25, 25, 25),
+    0 0 0 15px #1f50ffad,
+    0 0 0 20px rgb(25, 25, 25),
+    0 0 0 25px #1f50ff5b;
+    
+    border-radius: 50%;
+}
