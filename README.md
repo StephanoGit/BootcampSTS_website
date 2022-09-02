@@ -3,4 +3,5 @@
 
 A short blog based on the STS bootcamp of 2022 - 1st Edition (1.0)
 
-![RFC](https://github.com/StephanoGit/UniHack-2021/blob/master/other%20files/rfc.gif)
+![RFC](https://github.com/StephanoGit/BootcampSTS_website/blob/main/img/home.gif?raw=true)
+
